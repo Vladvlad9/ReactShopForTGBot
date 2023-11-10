@@ -1,10 +1,10 @@
 import './App.css';
 import {useEffect} from "react";
 import {useTelegram} from "./components/hooks/useTelegram";
-import Header from "./components/Header/header";
 import {Route, Routes} from "react-router-dom";
 import Form from "./components/Form/form";
 import ProductList from "./components/ProductList/productList";
+import AppBar from "./components/Appbar/AppBar";
 
 function App() {
     const {tg} = useTelegram();
@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className="App">
-            <Header />
+            <AppBar />
             <Routes>
                 <Route index element={<ProductList />}/>
                 <Route path={'form'} element={<Form />}/>
