@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {FaTrash} from "react-icons/fa";
 
 class Order extends Component{
     render() {
