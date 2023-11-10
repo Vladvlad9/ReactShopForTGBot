@@ -3,8 +3,8 @@ import {useEffect} from "react";
 import {useTelegram} from "./components/hooks/useTelegram";
 import Header from "./components/Header/header";
 import {Route, Routes} from "react-router-dom";
-import ProductList from "./components/ProductList/productList";
 import Form from "./components/Form/form";
+import ProductList from "./components/ProductList/productList";
 
 function App() {
     const {tg} = useTelegram();
